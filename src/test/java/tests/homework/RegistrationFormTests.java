@@ -11,7 +11,7 @@ import static com.codeborne.selenide.Selenide.executeJavaScript;
 import static com.codeborne.selenide.Selenide.open;
 import static io.qameta.allure.Allure.step;
 
-@Tag("demoqa")
+@Tag("homework")
 public class RegistrationFormTests extends TestBase {
 
     @Test

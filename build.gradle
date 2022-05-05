@@ -53,27 +53,8 @@ tasks.withType(Test) {
     }
 }
 
-task demoqa_tests(type: Test) {
+task homework(type: Test) {
     useJUnitPlatform{
-        includeTags "demoqa"
-//        excludeTags "simple"
-    }
-}
-
-task test5(type: Test) {
-    useJUnitPlatform{
-        includeTags "test5"
-    }
-}
-
-task systemProperties(type: Test) {
-    useJUnitPlatform{
-        includeTags "systemProperties"
-    }
-}
-
-task owner(type: Test) {
-    useJUnitPlatform{
-        includeTags "owner"
+        includeTags "homework"
     }
 }
