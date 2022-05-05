@@ -25,13 +25,13 @@ public class TestBase {
 
         String propertyMainPageUrl = System.getProperty("propertyMainPageUrl", "https://demoqa.com");
         String propertyBrowserSize = System.getProperty("propertyBrowserSize", "1980x1080");
-        String propertyRemoteUrl = System.getProperty("propertySelenoidUrl", "selenoid.autotests.cloud");
+        String propertyRemoteUrl = System.getProperty("propertySelenoidUrl", "selenoid.autotests.cloud/wd/hub");
 
         Configuration.browser = propertyBrowser;
         Configuration.browserVersion = propertyVersion;
         Configuration.baseUrl = propertyMainPageUrl;
         Configuration.browserSize = propertyBrowserSize;
-        Configuration.remote = "https://" + login + ":" + password + "@" + propertyRemoteUrl + "/wd/hub";
+        Configuration.remote = "https://" + login + ":" + password + "@" + propertyRemoteUrl;
 
 
         DesiredCapabilities capabilities = new DesiredCapabilities();
