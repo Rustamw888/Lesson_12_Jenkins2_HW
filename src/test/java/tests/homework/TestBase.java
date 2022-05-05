@@ -20,15 +20,15 @@ public class TestBase {
         String login = config.login();
         String password = config.password();
 
-        String propertyBrowser = System.getProperty("propertyBrowser", "chrome");
-        String propertyVersion = System.getProperty("propertyVersion", "100");
+//        String propertyBrowser = System.getProperty("propertyBrowser", "chrome");
+//        String propertyVersion = System.getProperty("propertyVersion", "100");
 
         String propertyMainPageUrl = System.getProperty("propertyMainPageUrl", "https://demoqa.com");
         String propertyBrowserSize = System.getProperty("propertyBrowserSize", "1980x1080");
         String propertyRemoteUrl = System.getProperty("propertySelenoidUrl", "selenoid.autotests.cloud");
 
-        Configuration.browser = propertyBrowser;
-        Configuration.browserVersion = propertyVersion;
+//        Configuration.browser = propertyBrowser;
+//        Configuration.browserVersion = propertyVersion;
         Configuration.baseUrl = propertyMainPageUrl;
         Configuration.browserSize = propertyBrowserSize;
         Configuration.remote = "https://" + login + ":" + password + "@" + propertyRemoteUrl + "/wd/hub";
