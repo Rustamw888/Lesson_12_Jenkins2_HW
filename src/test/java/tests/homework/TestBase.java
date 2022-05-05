@@ -27,11 +27,12 @@ public class TestBase {
         String propertyBrowserSize = System.getProperty("propertyBrowserSize", "1980x1080");
         String propertyRemoteUrl = System.getProperty("propertySelenoidUrl", "selenoid.autotests.cloud");
 
+        Configuration.browser = propertyBrowser;
+        Configuration.browserVersion = propertyVersion;
         Configuration.baseUrl = propertyMainPageUrl;
         Configuration.browserSize = propertyBrowserSize;
         Configuration.remote = "https://" + login + ":" + password + "@" + propertyRemoteUrl + "/wd/hub";
-        Configuration.browser = propertyBrowser;
-        Configuration.browserVersion = propertyVersion;
+
 
         DesiredCapabilities capabilities = new DesiredCapabilities();
         capabilities.setCapability("enableVNC", true);
